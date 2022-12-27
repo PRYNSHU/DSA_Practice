@@ -4,13 +4,13 @@
 #include <iostream>
 using namespace std; /// still have confusion.
 
-// int main()
-// {
-//     cout << "HI" << endl;
-//     cout << (" everyone \n"); cout << " noon";
-//     cout << "\twelcome back";
-//     cout << (5);   
-// }
+int main()
+{
+    cout << "HI" << endl;
+    cout << (" everyone \n"); cout << " noon";
+    cout << "\twelcome back";
+    cout << (5);   
+}
 
 //int main () { cout << "Hello World! "; return 0; }
 
