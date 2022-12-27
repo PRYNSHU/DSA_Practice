@@ -1,7 +1,7 @@
 #include "iostream"
-#include "array"
 using namespace std;
 
+#include "array"
 // int main(){
 //     int a[4]= { 3,45,6,5};
 //     array<int,4> b = {6,7,43,1};
@@ -14,7 +14,7 @@ using namespace std;
 // }
 //////////////////////////////
 
-// vector
+// //vector
 // #include "vector"
 // int main()
 // {   
@@ -32,7 +32,7 @@ using namespace std;
 //     cout << "print ";
 //      cout << v.size() << endl;
 //     for(int i=0 ;i<=v.size();i++){
-//         cout << v[i] << endl;
+//         cout << v[i] << " ";
 //     }
 //     cout << "capacity "<< v.capacity() << endl;
 
