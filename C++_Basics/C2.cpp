@@ -54,7 +54,7 @@ using namespace std;
 //   cout << "I just got executed!";
 // }
 ////////////////////////////
-// void time(int i,int j=99);
+// void time(int i,int j=100);
 // int num(int a,int b);
 
 // int main(){
@@ -65,7 +65,7 @@ using namespace std;
 // }
 
 // void time(int i,int j){
-//     cout << i <<j;
+//     cout << i << " " <<j << endl ;
 // }
 
 // int num(int a,int b){

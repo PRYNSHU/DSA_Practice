@@ -100,7 +100,7 @@ using namespace std;
 
 // void array(int ar[]){
 //     for (int i=0;i<=8;i++){
-//         cout << "array is " << i << ar[i] <<endl;
+//         cout << "array is " << i <<"-"<<ar[i]<<endl;
 //     }
 // }
 // int main(){
@@ -155,6 +155,7 @@ using namespace std;
 //         cout << a[i] << " ";
 //     }
 // }
+//////////////////////////////////////
 
 // void alternate(int a[], int n){
 //     int s1=0;
@@ -181,6 +182,8 @@ using namespace std;
 //     printarray(a,6);
 
 // }
+////////////////////////////////////
+//
 // int main(){
 //     int t,n; 
 //     cin >> t >> n;
@@ -196,6 +199,7 @@ using namespace std;
 //     }
     
 // }
+/////////////////////////////////////////
 
 // int main(){
 //     int arr1[6]= {1, 2, 2, 2, 3, 4};
