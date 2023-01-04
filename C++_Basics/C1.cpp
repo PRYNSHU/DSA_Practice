@@ -2,7 +2,7 @@
 // a statement end with semi-colon; , quotes and double quotes have differences .
 
 #include <iostream>
-using namespace std; /// still have confusion.
+using namespace std; /// still confusion.
 
 int main()
 {
