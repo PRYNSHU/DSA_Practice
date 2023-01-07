@@ -54,17 +54,17 @@ int main()
 }
 ///////////////////////////////////////////
 
-#include "deque"
-int main(){
-    deque <int> d = {1,2,3,8,9};
-    d.push_front(4);
-    d.push_back(6);
-    d.pop_front();
+// #include "deque"
+// int main(){
+//     deque <int> d = {1,2,3,8,9};
+//     d.push_front(4);
+//     d.push_back(6);
+//     d.pop_front();
     
-    for(int i:d){
-        cout << i << ' ';
-    }
-}
+//     for(int i:d){
+//         cout << i << ' ';
+//     }
+// }
 ///////////////////////////////
 
 // #include "list"

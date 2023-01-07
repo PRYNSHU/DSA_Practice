@@ -2,19 +2,19 @@
 //#include <bits/stdc++.h>
 using namespace std;
 
-// class add{
-//     public:
-//     int a,b;
-//     void ans(){
-//         cout << " ans is " << (a+b) << endl;
-// }
-// };
-// int main(){
-//     add obj1;
-//     obj1.a= 4;
-//     obj1.b=8;
-//     obj1.ans();
-// }
+class add{
+    public:
+    int a,b;
+    void ans(){
+        cout << " ans is " << (a+b) << endl;
+}
+};
+int main(){
+    add obj1;
+    obj1.a= 4;
+    obj1.b=8;
+    obj1.ans();
+}
 ////////////////////////////////////
 // C++ program to demonstrate accessing of data members
 

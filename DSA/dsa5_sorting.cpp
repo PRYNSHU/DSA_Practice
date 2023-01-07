@@ -3,30 +3,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// int main(){
-//     vector<int > arr ={6,4,2,10,5};
-//     int n =5;
-//     // int minIndex;
-//     // for(int i=0;i<n-1;i++){
-//     //    minIndex =i;
+int main(){
+    vector<int > arr ={6,4,2,10,5};
+    int n =5;
+    // int minIndex;
+    // for(int i=0;i<n-1;i++){
+    //    minIndex =i;
 
-//     //    for(int j= i+1;j<n;j++){
-//     //     if(arr[minIndex] > arr[j])
-//     //     {
-//     //         minIndex = j;
-//     //     }
-//     //    }
-//     //    swap(arr[minIndex] , arr[i]);
-//     // }
-//     // for(int v: arr){
-//     //     cout << v << " ";
-//     // }
-//     sort(arr.begin() , arr.end());
-//     for (int i :arr){
-//         cout << i << " ";
-//     }
+    //    for(int j= i+1;j<n;j++){
+    //     if(arr[minIndex] > arr[j])
+    //     {
+    //         minIndex = j;
+    //     }
+    //    }
+    //    swap(arr[minIndex] , arr[i]);
+    // }
+    // for(int v: arr){
+    //     cout << v << " ";
+    // }
+    sort(arr.begin() , arr.end());
+    for (int i :arr){
+        cout << i << " ";
+    }
 
-// }
+}
 
 // void bubbleSort(vector<int>& arr, int n)
 // {
@@ -41,14 +41,14 @@ using namespace std;
 //     }
 // }
 
-int main(){
-    vector<int > arr ={10 ,4 ,5 ,2 ,3 ,6 ,1 ,3 ,6};
-    int m =3;
-    for()
+// int main(){
+//     vector<int > arr ={10 ,4 ,5 ,2 ,3 ,6 ,1 ,3 ,6};
+//     int m =3;
+//     for()
 
 
 
-}
+// }
 
 
 
