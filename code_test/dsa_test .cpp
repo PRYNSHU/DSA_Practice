@@ -5,6 +5,7 @@ class solution{
     public:
     vector<int> fun(int n){
         //code here
+
     }
 
 };
@@ -19,7 +20,7 @@ int main(){
         cin >>n;
         solution obj1;
         vector<int> ans = obj1.fun(n);
-        for(int i:ans){
+        for( i:ans){
             cout << i << " ";
         }
         cout << endl;
