@@ -23,7 +23,7 @@ int main(){
     // }
     sort(arr.begin() , arr.end());
     for (int i :arr){
-        cout << i << " ";
+        cout << i << "  ";
     }
 
 }
