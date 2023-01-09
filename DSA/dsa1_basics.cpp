@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 // int main(){
 //     for(int i=1;i<=5;i++){
 //         int space= 5-i;
@@ -201,18 +202,18 @@ using namespace std;
 // }
 /////////////////////////////////////////
 
-int main(){
-    int arr1[6]= {1, 2, 2, 2, 3, 4};
-    int arr2[4] = { 2,20,3,3};
-    for (int i=0;i<6;i++){
-        for (int j=0;j<4;j++){
-            if(arr1[i]==arr2[j]){
-                cout << arr1[i] << " ";
-                break;
-            }
-        }
-    }
-}
+// int main(){
+//     int arr1[6]= {1, 2, 2, 2, 3, 4};
+//     int arr2[4] = { 2,20,3,3};
+//     for (int i=0;i<6;i++){
+//         for (int j=0;j<4;j++){
+//             if(arr1[i]==arr2[j]){
+//                 cout << arr1[i] << " ";
+//                 break;
+//             }
+//         }
+//     }
+// }
 
 
 
