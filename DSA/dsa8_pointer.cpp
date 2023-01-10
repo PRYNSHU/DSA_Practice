@@ -49,8 +49,29 @@ void pointerBasic1(){
 }
 
 void pointerBasic2(){
+    
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
 int main(){
     //pointerBasic1();
     pointerBasic2();
