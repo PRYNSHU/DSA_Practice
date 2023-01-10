@@ -6,10 +6,11 @@ Here , I add how I am preparing for DSA in C++
 <h3>Platforms in am using </h3>
 
 1. LEETCODE
-2. GFG PRACTISE
+2. GFG PRACTICE
 3. CODEFORCES
 4. CODECHEF
 5. HACKERRANK 
+
 <br>
 ==============================
 
@@ -21,4 +22,5 @@ DP SHEET I FOLLOWED
 
 <h3> strivers A2Z dsa sheet</h3>
 https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
+
 
