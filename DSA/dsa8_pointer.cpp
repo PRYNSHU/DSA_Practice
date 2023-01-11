@@ -22,11 +22,7 @@ void pointerBasic1(){
     //another method
     int *ptr = 0;
     ptr = &num;
-    cout << ptr << " " << *ptr << endl; 
-    
-    //increasing
-    (*p)++;             //num is 4 ,In pointer value doesn't copy
-    cout << "increasing value" << num <<endl;
+    cout << ptr << " " << *ptr << endl;
 
     //copying the value
     int *q =p;
@@ -37,6 +33,7 @@ void pointerBasic1(){
     cout <<a <<endl;
     
     //increamenting
+    //i is 6 ,In pointer value doesn't copy
     int i =5;
     int *t = &i;
     cout << "before " << *t <<endl;
@@ -49,18 +46,19 @@ void pointerBasic1(){
 }
 
 void pointerBasic2(){
-    
+    //array
     int arr[10] ={2,6,5,7,9};
 
     cout << arr <<" " << &arr << endl;
     cout << arr[0] << " " << &arr[0] << endl;
 
     //adding
-    cout << "old value " << *arr << endl;
+    cout << "old value " << *arr << endl; //*arr means 0th value
     cout << "new value " << *arr +1 << endl;
     
     //arr[i] = i[arr] = *(arr + i) that's interesting
-    cout << *(arr +1 ) << " " << *arr + 1 << endl;
+    //*(arr +1) means take one step or add 4bytes
+    cout << "abc " << *(arr +1 ) << " " << *arr + 1 << endl;
 
 
     int *p = &arr[0];
@@ -76,22 +74,28 @@ void pointerBasic2(){
     cout << *t << endl;
     //Here because address is store in something 
     t = t +1;  //it means add +4 byte to it
-    cout << *t<< endl;
+    cout << "ans " << *t<< endl;
     
 
-    //char array
+    //CHAR ARRAY
     int b[5] = {1,2,3,7,4};
     char c1[5] = {'a' , 'b' , 'c', 'd' , 'e'};
-    //char c2[5] = "abcde";  //show an error
+    //show an error ,because char array also has a null value
+    //char c2[5] = "abcde";
     char c2[6] = "abcde";
     char c3[6] = {"abcde"};
 
     //different way to write
+    cout << c1 << endl;
+    cout << c2 << endl;
+    cout << c3 << endl;
+
     cout << c1[0] << endl;
     cout << c2[0] << endl;
     cout << c3[0] << endl;
-    
-    cout << b << " " << c2 << endl;  //cout implement char and int array differently
+
+    //cout implement char and int array differently
+    cout <<"different implementation " << b << " " << c2 << endl;
 
     char *temp = &c2[0];
     cout << temp << endl;  // print entire array
@@ -102,12 +106,13 @@ void pointerBasic2(){
 }
 
 void print(int *p){
-    *p++;
-    p++;
-    
+    *p = *p +1;
+    //p = p+1;
+    cout << "inside value " << *p << endl;
+    cout << "inside value " << p << endl;
 }
 
-//Here function take arr as pointer *arr 
+//Here function take arr as pointer *arr
 int getsum(int arr[] , int n){
     int sum =0;
     //cout << sizeof(arr) << endl;  //size is 4
@@ -116,20 +121,23 @@ int getsum(int arr[] , int n){
     }
     return sum;
 }
+
 int main(){
     //pointerBasic1();
     //pointerBasic2();
 
-    int value = 2;
+    
+    int value = 5;
     int *p = &value;
-    cout << *p << endl; //value
-    cout << p << endl;  //address
+    cout << "old value " << *p << endl; //value
+    cout << "old value " << p << endl;  //address
 
     print(p);
-    cout << *p << endl; //value updated 
-    cout << p << endl;  //address not updated
+    cout << "new value " << *p << endl; //value updated
+    cout << "new value " << p << endl;  //address not updated
     
+    //getsum
     int arr[5] = {1,2,3,4,5};
-    cout << "sum is : " << getsum(arr +2, 3) << endl;
+    cout << "sum is : " << getsum(arr , 3) << endl;
 
 }
