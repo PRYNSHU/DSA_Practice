@@ -34,14 +34,29 @@ void count(int n){
  
 }
 
+int sumarr(int arr[], int n){
+    //base condition
+    if(n==1){
+        return arr[0];
+    }
+    //cout << arr[0] << " " << n << endl;
+
+    //recursive relation
+    int sum = arr[0] + sumarr(arr +1, n-1);
+    return sum;
+}
+
 int main(){
     int n;
     cin >> n;
-    // int ans = fact(n);
+    int ans = fact(n);
+    cout << ans << endl;
+
+    int ans2 = power(n);
+    cout << ans2 << endl;
+
+    count(n);
+    // cout << "sum is " << endl;
+    // int ans = sumarr(arr , n);
     // cout << ans << endl;
-
-    // int ans2 = power(n);
-    // cout << ans2 << endl;
-
-    //count(n);
 }

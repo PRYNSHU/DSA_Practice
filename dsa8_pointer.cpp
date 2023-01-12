@@ -113,7 +113,7 @@ void print(int *p){
 }
 
 //Here function take arr as pointer *arr
-int getsum(int arr[] , int n){
+int getsum(int *arr , int n){
     int sum =0;
     //cout << sizeof(arr) << endl;  //size is 4
     for(int i=0;i<n;i++){
@@ -127,17 +127,17 @@ int main(){
     //pointerBasic2();
 
     
-    int value = 5;
-    int *p = &value;
-    cout << "old value " << *p << endl; //value
-    cout << "old value " << p << endl;  //address
+    // int value = 5;
+    // int *p = &value;
+    // cout << "old value " << *p << endl; //value
+    // cout << "old value " << p << endl;  //address
 
-    print(p);
-    cout << "new value " << *p << endl; //value updated
-    cout << "new value " << p << endl;  //address not updated
+    // print(p);
+    // cout << "new value " << *p << endl; //value updated
+    // cout << "new value " << p << endl;  //address not updated
     
     //getsum
-    int arr[5] = {1,2,3,4,5};
-    cout << "sum is : " << getsum(arr , 3) << endl;
+    int arr[] = {1,2,3,4,5};
+    cout << "sum is : " << getsum(arr+2 , 3) << endl;
 
 }
