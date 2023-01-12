@@ -26,8 +26,26 @@ void area(){
     cout << "Area of rectangle is: "<< area << endl;
 }
 
+//inline function works like (macro) 
+//only for single line of code
+//no extra memory used and no function calling overhead
+inline int maxi(int &a, int& b){
+    return (a>b) ? a:b;
+}
+
+
 int main(){
-    macro();
-    area();
+    //macro();
+    //area();
+
+    int a = 1, b =2;
+    int ans = maxi(a,b);
+    cout << ans << endl;
+
+    a++;
+    b++;
+    int ans1 = maxi(a,b);
+    cout << ans1 << endl;
+
 }
 
