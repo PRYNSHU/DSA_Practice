@@ -43,7 +43,48 @@ using namespace std;
 //     cout << s << endl;
 
 // }
+//PROGRAM TO CHECK RECURSION
 
+// bool check(string s , int i ,int j){
+//     //base cond
+//     if(i>j)
+//         return 1;
+
+//     if(s[i]==s[j]) return check(s , i+1 ,j-1);
+//     else return false;
+// }
+
+
+// int main(){
+//     string s = "acbaabca";
+//     string t = "abcdba";
+//     cout << s << endl;
+//     if(check(s, 0 , s.length() -1)) cout << "palindrome";
+
+//     else cout << "not a palindrome";
+    
+// }
+
+int rec(int a ,int b){
+    //base cond
+    if(b==0) return 1;
+
+    //rec rel
+    int c = rec(a , b/2);
+    
+    if(b&1) //odd
+        return a * c *c;
+    else
+        return c * c;
+}
+
+int main(){
+    int a = 3 , b= 11;
+    int ans = rec(a ,b);
+    cout << ans;
+    
+    
+}
 
 
 
