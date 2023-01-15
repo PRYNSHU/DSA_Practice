@@ -20,7 +20,7 @@ void print(int arr[] , int s ,int e){
 }
 bool binarySearch(int arr[], int s,int e, int key){
 
-    print(arr , s,e);
+    //print(arr , s,e);
     //base cond
     if(s>e)
         return false;
@@ -39,20 +39,30 @@ bool binarySearch(int arr[], int s,int e, int key){
 
 }
 
-int main(){
-    int arr[] = {3,4,12,14,22};
-    int n =5;
-    int key =22;
+int printing(int i){
+    
+    cout << i << " HELLO WORLD" << endl;
+    if(i==20)
+        return 0;
 
-    // if(linearSearch(arr , n ,key)){
+    return printing(i+1);
+}
+int main(){
+    // int arr[] = {3,4,12,14,22};
+    // int n =5;
+    // int key =22;
+
+    // // if(linearSearch(arr , n ,key)){
+    // //     cout << "present" << endl;
+    // // }
+    // // else
+    // //     cout << "not present" << endl;
+
+    // if( binarySearch(arr , 0, 4,key) ){  
     //     cout << "present" << endl;
     // }
     // else
     //     cout << "not present" << endl;
-
-    if( binarySearch(arr , 0, 4,key) ){  
-        cout << "present" << endl;
-    }
-    else
-        cout << "not present" << endl;
+    int i =1;
+    cout << "final ans " << printing(i) << endl;
 }
