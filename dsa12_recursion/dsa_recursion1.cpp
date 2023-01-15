@@ -4,11 +4,10 @@ using namespace std;
 int fact(int n){
     //base condition (where to stop)
     if(n==0)
-    return 1; // In base condition return is mandatory
+        return 1; // In base condition return is mandatory
 
     //recursive relation
-    int rel = n * fact(n-1);
-    return rel;
+    return n * fact(n-1);
 }
 
 int power(int n){

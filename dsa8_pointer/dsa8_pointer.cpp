@@ -107,7 +107,7 @@ void pointerBasic2(){
 
 void print(int *p){
     *p = *p +1;
-    //p = p+1;
+     p = p+1;
     cout << "inside value " << *p << endl;
     cout << "inside value " << p << endl;
 }
@@ -127,14 +127,14 @@ int main(){
     //pointerBasic2();
 
     
-    // int value = 5;
-    // int *p = &value;
+    int value = 5;
+    int *p = &value;
     // cout << "old value " << *p << endl; //value
     // cout << "old value " << p << endl;  //address
 
-    // print(p);
-    // cout << "new value " << *p << endl; //value updated
-    // cout << "new value " << p << endl;  //address not updated
+    print(p);
+    cout << "new value " << *p << endl; //value updated
+    cout << "new value " << p << endl;  //address not updated
     
     //getsum
     int arr[] = {1,2,3,4,5};
