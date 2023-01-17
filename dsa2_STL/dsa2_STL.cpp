@@ -7,7 +7,7 @@ using namespace std;
 #include "stack"
 #include "queue"
 
-
+ 
 void array1(){
     int a[4]= { 3,45,6,5};
     array <int,4> b = {6,7,43,1};
