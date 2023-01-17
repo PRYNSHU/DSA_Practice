@@ -6,7 +6,7 @@ using namespace std;
 //         int space= 5-i;
 //         for(int j=1;j<=space;j++){
 //             cout <<" ";
-//         }
+//         } 
 //         for(int k=1;k<=i;k++){
 //             cout <<k;
 //         }
