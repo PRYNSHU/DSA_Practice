@@ -23,26 +23,28 @@ using namespace std;
 
 //=========PROGRAM BY RECURSION============
 
-// void reverse(string& s , int i ,int j){
-//     //base cond
-//     if(i>j)
-//         return;
+void reverse(string& s , int i ,int j){
+    //base cond
+    if(i>j)
+        return;
 
-//     swap(s[i] , s[j]);
+    swap(s[i] , s[j]);
     
-//     //rec rel
-//     reverse(s , i +1 ,j -1);
-// }
+    //rec rel
+    reverse(s , i +1 ,j -1);
+    reverse(s , i +1 ,j -1);
 
-// int main(){
-//     string s = "abcde";
-//     cout << s << endl;
+}
 
-//     int i =0 , j = s.length()-1;
-//     reverse(s , i , j);
-//     cout << s << endl;
+int main(){
+    string s = "abcde";
+    cout << s << endl;
 
-// }
+    int i =0 , j = s.length()-1;
+    reverse(s , i , j);
+    cout << s << endl;
+
+}
 //PROGRAM TO CHECK RECURSION
 
 // bool check(string s , int i ,int j){
@@ -65,26 +67,29 @@ using namespace std;
     
 // }
 
-int rec(int a ,int b){
-    //base cond
-    if(b==0) return 1;
+// int rec(int a ,int b){
+//     //base cond
+//     if(b==0) 
+//     return 1;
 
-    //rec rel
-    int c = rec(a , b/2);
+//     //rec rel
+//     int c = rec(a , b/2);
     
-    if(b&1) //odd
-        return a * c *c;
-    else
-        return c * c;
-}
+//     if(b&1) //odd
+//         return a * c *c;
+//     else
+//         return c * c;
+// }
 
-int main(){
-    int a = 3 , b= 11;
-    int ans = rec(a ,b);
-    cout << ans;
-    
-    
-}
+// int main(){
+//     int a = 3 , b= 11;
+//     int ans = rec(a ,b);
+//     cout << ans;
+
+// }
+
+
+
 
 
 
