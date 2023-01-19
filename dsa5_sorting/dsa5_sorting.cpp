@@ -21,6 +21,7 @@ int main(){
     // for(int v: arr){
     //     cout << v << " ";
     // }
+    
     sort(arr.begin() , arr.end());
     for (int i :arr){
         cout << i << "  ";
