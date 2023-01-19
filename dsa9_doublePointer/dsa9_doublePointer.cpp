@@ -33,6 +33,7 @@ void pointer1(){
     cout << endl << first << " " << p1 << endl;
     
 }
+
 int main(){
     pointer1();
 }
