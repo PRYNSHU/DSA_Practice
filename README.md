@@ -2,7 +2,9 @@
 Data structure and algorithm practice
 ===============================
 
-Here , I add how I am preparing for DSA in C++
+Here , I add how I am preparing for DSA
+<h5>I am using C++ language</h5>
+<h5> You can choose any language.</h5> 
 <h3>Platforms in am using </h3>
 
 1. LEETCODE
