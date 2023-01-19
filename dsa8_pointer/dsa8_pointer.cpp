@@ -2,37 +2,38 @@
 using namespace std;
 
 void pointerBasic1(){
-    int num = 3;      //variable n has value 3 store in its memory
+    int num = 4;      //variable n has value 4 store in its memory
     int *p = &num;   // * is a dereference operator and p is a pointer
 
-    cout << "value of num: " << num 
+    cout << "value of num: " << num
     << "\naddress of num is: " << &num << endl;
 
     //value of p and *p
     cout << "p: "<< p <<endl;
     cout << "*p: " << *p <<endl;
     // here pointer p is declared and it contains the address of 
-    // n variable and also
-    // p pointer has its own address, but it store's address of n
+    // num variable and also
+    // p pointer has its own address, but it store's address of num
     
     //size of num and p
     cout << "size of num " << sizeof(num)<< endl;
     cout << "size of p " << sizeof(p) << endl;
     
     //another method
-    int *ptr = 0;
+    int *ptr =0; //pointer declared with null value
     ptr = &num;
     cout << ptr << " " << *ptr << endl;
 
-    //copying the value
+    //copying the value 
+    cout << "value copy: ";
     int *q =p;
     cout << p << " " << q <<endl;
     cout << *p << " " << *q <<endl;
     
-    int a = (int )&p;  //&p means address of p pointer
-    cout <<a <<endl;
+    int a = (int)&p;  //&p means address of p pointer
+    cout <<a << " " << &p << endl;
     
-    //increamenting
+    //Increamenting
     //i is 6 ,In pointer value doesn't copy
     int i =5;
     int *t = &i;
@@ -65,12 +66,12 @@ void pointerBasic2(){
     cout << sizeof(arr) << " " << sizeof(&p) << endl;
     
     //we can't reassign the address of an array
-    int a[10] ={1,6,3};
-    int *t = &a[0];
-    cout << a <<endl;
+    int m[10] ={1,6,3,7};
+    int *t = &m[0];
+    cout << m << endl;
 
     //an Error
-    //a = a+1;       
+    //m = m+1;  
     cout << *t << endl;
     //Here because address is store in something 
     t = t +1;  //it means add +4 byte to it
@@ -107,7 +108,7 @@ void pointerBasic2(){
 
 void print(int *p){
     *p = *p +1;
-     p = p+1;
+    p = p+1;
     cout << "inside value " << *p << endl;
     cout << "inside value " << p << endl;
 }
@@ -129,8 +130,8 @@ int main(){
     
     int value = 5;
     int *p = &value;
-    // cout << "old value " << *p << endl; //value
-    // cout << "old value " << p << endl;  //address
+    cout << "old value " << *p << endl; //value
+    cout << "old value " << p << endl;  //address
 
     print(p);
     cout << "new value " << *p << endl; //value updated
