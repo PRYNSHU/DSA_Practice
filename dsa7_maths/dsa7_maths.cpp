@@ -15,9 +15,8 @@ int gcd(int a ,int b){
         b=b-a;
     }
     return a;
-
-
 }
+
 int main(){
     int a, b;
     cin >> a >> b;
