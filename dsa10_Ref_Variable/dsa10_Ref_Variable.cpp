@@ -53,6 +53,4 @@ int main(){
     // }
     int *c = new int ;
     delete c; //to delete dynamic memory
-
-
 }
