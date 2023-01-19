@@ -6,28 +6,30 @@ using namespace std;
 #include "list"
 #include "stack"
 #include "queue"
+// or #include "bits/stdc++.h"
 
  
-void array1(){
+void array1(){ //memory already allocated 
     int a[4]= { 3,45,6,5};
-    array <int,4> b = {6,7,43,1};
+    array <int,4> b = {1,7,43,4};
 
     cout << a[2] << " " << b[2] <<endl;
 
     // just break the code in lines
-    cout << b.at(3) << " " << b.front() << " "
-    << b.back() << " size_is " << b.size();
+    cout << b.at(2) << " " << b.front() << " "
+    << b.back() << " size is " << b.size();
 }
 
-void vector1()
-{   
+void vector1() //memory allocated at run time
+{
     vector<int> v;
-    cout << v.size();
+    cout << v.size() << endl;
     v.push_back(4);
     
     cout << v.at(0) << endl;
     v.push_back(5);
     v.push_back(8);
+    v.push_back(2);
 
     // v.pop_back();
     // v.pop_back();
@@ -38,7 +40,8 @@ void vector1()
         cout << v[i] << " ";
     }
     cout << "capacity "<< v.capacity() << endl;
-
+    
+    //for each loop
     for(int i:v){
         cout << i << " ";
     }
@@ -50,10 +53,14 @@ void vector1()
         cout << i << " ";
     } cout << endl;
 
-    vector <int > l(v); // vector l assign value of v vector
+    //vector <int> l = v;
+    vector <int > l(v); // vector l assign value of v vector and copied
     for (int i:l){
         cout << i << " ";
-    }
+    } cout << endl;
+
+    v.pop_back();
+    cout << v.back() << " " << l.back();
 }
 
 void deque1(){
@@ -124,8 +131,8 @@ void queue1(){
 }
 
 int main(){
-    // array1();
-    // vector1();
+    //array1();
+    //vector1();
     // deque1();
     // list1();
     // stack1();
