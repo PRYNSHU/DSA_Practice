@@ -11,7 +11,6 @@ void macro(){
     int n =5;
     int area = PI * n *n;
     cout << area << endl;
-
 }
 
 void area(){
