@@ -8,7 +8,7 @@ class add{
     void ans(){
         cout << " ans is " << (a+b) << endl;
 }
-};
+}; 
 int main(){
     add obj1;
     obj1.a= 4;
