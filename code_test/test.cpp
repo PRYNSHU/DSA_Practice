@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 // int main() {
@@ -91,9 +91,26 @@ using namespace std;
 
 // }
 
+
 int main(){
-
-
+    vector<int> n = {12,3,4};
+    vector<int> t(4);
+    t.at(0) =5;
+    t.at(1) =4;
+    t.at(2) =6;
+    for(int j:t){
+        cout << j << " " ;
+    }
+    for(int i=0;i<n.size();i++){
+        t[i] = n[i];
+    }
+    cout << t.size();
+    
+    cout <<"result ";
+    cout << t[0] <<endl;
+    for(int j:t){
+        cout << j << " " ;
+    }
 }
 
 
