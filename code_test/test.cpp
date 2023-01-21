@@ -91,26 +91,63 @@ using namespace std;
 
 // }
 
+//#logic of the year
+// class Solution {
+// public:
+//     vector<int> plusOne(vector<int>& digits) {
+//         vector<int> res;
+//         int tmp = 1;
+//         for (int i = digits.size() - 1; i >= 0; i--) {
+//             tmp += digits[i];
+//             res.push_back(tmp % 10);
+//             tmp /= 10;
+//         }
+//         if (tmp > 0) {
+//             res.push_back(tmp);
+//         }
+//         for (int i = 0, j = res.size() - 1; i < j; i++, j--) {
+//             swap(res[i], res[j]);
+//         }
+//         return res;
+//     }
+// };
+
+// int main(){
+//     vector<int> n = {12,3,4};
+//     vector<int> t(4);
+//     t.at(0) =5;
+//     t.at(1) =4;
+//     t.at(2) =6;
+//     for(int j:t){
+//         cout << j << " " ;
+//     }
+//     for(int i=0;i<n.size();i++){
+//         t[i] = n[i];
+//     }
+//     cout << t.size();
+    
+//     cout <<"result ";
+//     cout << t[0] <<endl;
+//     for(int j:t){
+//         cout << j << " " ;
+//     }
+// }
 
 int main(){
-    vector<int> n = {12,3,4};
-    vector<int> t(4);
-    t.at(0) =5;
-    t.at(1) =4;
-    t.at(2) =6;
-    for(int j:t){
-        cout << j << " " ;
-    }
-    for(int i=0;i<n.size();i++){
-        t[i] = n[i];
-    }
-    cout << t.size();
-    
-    cout <<"result ";
-    cout << t[0] <<endl;
-    for(int j:t){
-        cout << j << " " ;
-    }
+    // vector<int> digits = {1,2,3};
+    // int n = digits.size();
+    // int t=1 , number =0;
+
+    //     //array to digit
+    //     for(int i =n-1;i>=0;i--){
+    //         number = t*1 * digits[i] +number;
+    //         t= t*10;
+    //     }
+    //     cout << number;
+
+    int n = 1234;
+    string s = to_string(n);
+    cout << s.length();
 }
 
 
