@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+   
 // int main() {
 //     int t,N,count ;
 //     string S;
@@ -132,23 +132,62 @@ using namespace std;
 //         cout << j << " " ;
 //     }
 // }
-
+    
 int main(){
     // vector<int> digits = {1,2,3};
     // int n = digits.size();
     // int t=1 , number =0;
-
+    
     //     //array to digit
     //     for(int i =n-1;i>=0;i--){
     //         number = t*1 * digits[i] +number;
     //         t= t*10;
     //     }
     //     cout << number;
-
+    
     int n = 1234;
     string s = to_string(n);
     cout << s.length();
 }
+
+int mySqrt(int x) {
+    long r = x;
+    while (r*r > x)
+        r = (r + x/r) / 2;
+    return r;
+
+}
+
+
+class Solution {
+public:
+    int findKthPositive(vector<int>& arr, int k) {
+        vector<int> missing;
+        int i =0;
+        int m =1;
+        while(i< arr.size()){
+            //case 1
+            if(arr[i] == m){
+                m++;
+            }
+            //case 2
+            else if(m > arr[i]){
+                i++;
+            } 
+            //case 3
+            else if(m < arr[i]){
+                missing.push_back(m);
+                if(missing[m] == missing[k-1]){
+                    return missing[m];
+                    break;
+                }
+                m++;
+            }
+
+        }
+
+    }
+};
 
 
 

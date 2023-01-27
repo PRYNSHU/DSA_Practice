@@ -46,8 +46,7 @@ int sumarr(int arr[], int n){
 }
 
 int main(){
-    int n;
-    cin >> n;
+    int n = 5;
     int ans = fact(n);
     cout << ans << endl;
 
