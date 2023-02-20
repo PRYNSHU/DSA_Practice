@@ -132,7 +132,8 @@ using namespace std;
 //         cout << j << " " ;
 //     }
 // }
-    
+
+/* 
 int main(){
     // vector<int> digits = {1,2,3};
     // int n = digits.size();
@@ -188,6 +189,60 @@ public:
 
     }
 };
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+     Enter your code here. Read input from STDIN. Print output to STDOUT
+    int n ;
+    cin >> n;
+    
+    vector<int> arr;
+    int j;
+    for(int i= 0;i<n;i++){
+        cin >> j;
+        arr.push_back(j);
+    }
+    for(int i:arr){
+        cout << i << " ";
+    }
+    //for max
+    int max = INT32_MIN;
+    for (int i =0;i<n;i++){
+        if(arr[i]> max){
+            max=arr[i];
+        }
+    }
+    cout << max;
+}
+*/
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int t , n ;
+    string s;
+    cin >>t;
+    while(--t){
+        cin >>n;
+        cin >> s;
+        for(int i =0;i<n;i++){
+            if(s[i] == s[n-i-1]){
+                continue;
+            }
+            else{
+                cout << "NO" << endl;
+                break;
+            }
+        }
+        cout << "YES" << endl;
+    }
+    return 0;
+}
 
 
 
