@@ -42,7 +42,7 @@ void vector1() //memory allocated at run time
     cout << "capacity "<< v.capacity() << endl;
     
     //for each loop
-    for(int i:v){
+    for(int i:v){ // i == v[i] each value
         cout << i << " ";
     }
 
