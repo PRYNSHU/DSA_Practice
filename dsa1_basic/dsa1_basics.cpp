@@ -215,6 +215,21 @@ using namespace std;
 //     }
 // }
 
-
+/////////////////////////////////////////////////
+ //add element to the array
+// int main()
+// {
+//     int t;
+//     cin >>t;
+//     while(t--){
+//         int arr[5];
+//         for(int i =0;i<5;i++)
+//         cin >> arr[i];
+        
+//         for(int j:arr)
+//         cout << j << " ";
+//         cout << "end" << endl;
+//     }
+// }
 
 
