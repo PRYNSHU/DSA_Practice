@@ -13,24 +13,25 @@ int fact(int n){
 int power(int n){
     //base cond
     if(n==0)
-    return 1;
+        return 1;
 
     //recursive relation
-    int rel = 2 * power(n-1);
+    return 2 * power(n-1);
 }
 
 void count(int n){
     //base cond
     if(n==0)
-    return; //void fun
+        return; //void fun
 
     //processing (optional component)
     cout << n << endl;
 
-    //recurcive relation 
+    //recurcive relation
     //(as rec. rel. is below from processing ,it is called TAIL recursion)
     count(n-1);
- 
+    cout << n <<endl;
+    //rec rel always returns to main whether it is void or not 
 }
 
 int sumarr(int arr[], int n){
@@ -47,14 +48,15 @@ int sumarr(int arr[], int n){
 
 int main(){
     int n = 5;
-    int ans = fact(n);
-    cout << ans << endl;
-
-    int ans2 = power(n);
-    cout << ans2 << endl;
-
-    count(n);
-    // cout << "sum is " << endl;
-    // int ans = sumarr(arr , n);
+    int arr[10] = {1,2,3,4,5};
+    // int ans = fact(n);
     // cout << ans << endl;
+
+    // int ans2 = power(n);
+    // cout << ans2 << endl;
+
+    //count(n);
+    cout << "sum is " << endl;
+    int ans = sumarr(arr , n);
+    cout << ans << endl;
 }
