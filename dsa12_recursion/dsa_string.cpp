@@ -23,49 +23,51 @@ using namespace std;
 
 //=========PROGRAM BY RECURSION============
 
-void reverse(string& s , int i ,int j){
+// void reverse(string& s , int i ,int j){
+//     //base cond
+//     if(i>j)
+//         return;
+
+//     swap(s[i] , s[j]);
+    
+//     //rec rel
+//     reverse(s , i +1 ,j -1);
+//     reverse(s , i +1 ,j -1);
+
+// }
+
+// int main(){
+//     string s = "abcde";
+//     cout << s << endl;
+
+//     int i =0 , j = s.length()-1;
+//     reverse(s , i , j);
+//     cout << s << endl;
+
+// }
+//===========PROGRAM TO CHECK RECURSION============
+
+bool check(string s , int i ,int j){
     //base cond
     if(i>j)
-        return;
+        return 1;
 
-    swap(s[i] , s[j]);
-    
-    //rec rel
-    reverse(s , i +1 ,j -1);
-    reverse(s , i +1 ,j -1);
-
+    if(s[i]==s[j]) return check(s , i+1 ,j-1);
+    else return false;
 }
 
 int main(){
-    string s = "abcde";
+    string s = "acbaabca";
+    string t = "abcdba";
     cout << s << endl;
 
-    int i =0 , j = s.length()-1;
-    reverse(s , i , j);
-    cout << s << endl;
-
-}
-//PROGRAM TO CHECK RECURSION
-
-// bool check(string s , int i ,int j){
-//     //base cond
-//     if(i>j)
-//         return 1;
-
-//     if(s[i]==s[j]) return check(s , i+1 ,j-1);
-//     else return false;
-// }
-
-
-// int main(){
-//     string s = "acbaabca";
-//     string t = "abcdba";
-//     cout << s << endl;
-//     if(check(s, 0 , s.length() -1)) cout << "palindrome";
-
-//     else cout << "not a palindrome";
+    if(check(s, 0 , s.length() -1))
+        cout << "palindrome";
+    else 
+        cout << "not a palindrome";
     
-// }
+}
+//============================================
 
 // int rec(int a ,int b){
 //     //base cond
