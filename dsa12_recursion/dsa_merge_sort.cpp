@@ -1,7 +1,7 @@
 #include "bits/stdc++.h"
 using namespace std;
 
-
+//hint In two rec call , run them simultaneously
 // void fun(int n){
 //     if(n>2){
 //         fun(n-1);
@@ -19,10 +19,12 @@ void merge(int *arr, int s, int e) {
 
     int mid = (s+e)/2;
 
+    //arrays length
     int len1 = mid - s + 1;
     int len2 = e - mid;
     cout << "len-" << len1 << " " << len2 <<endl;
 
+    //creating new array
     int *first = new int[len1];
     int *second = new int[len2];
 
@@ -67,7 +69,8 @@ void merge(int *arr, int s, int e) {
     while(index2 < len2 ) {
         arr[mainArrayIndex++] = second[index2++];
     }
-     //printing
+
+    //printing
     cout << "array ";
     for(int i =0;i<7;i++){
         cout << arr[i] << " ";
@@ -101,14 +104,14 @@ void mergeSort(int *arr, int s, int e) {
 }
 
 int main() {
-
     int arr[7] = {3,7,0,1,5,8,3};
     int n = 7;
 
     mergeSort(arr, 0, n-1);
-    cout << "final-";
-    for(int i=0;i<n;i++){
-        cout << arr[i] << " ";
+
+    cout << "final-" << endl;
+    for(int i:arr){
+        cout << i << " ";
     } cout << endl;
 
     return 0;
