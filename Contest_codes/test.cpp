@@ -222,26 +222,37 @@ int main() {
     cout << max;
 }
 */
-int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
-    int t , n ;
-    string s;
-    cin >>t;
-    while(--t){
-        cin >>n;
-        cin >> s;
-        for(int i =0;i<n;i++){
-            if(s[i] == s[n-i-1]){
-                continue;
-            }
-            else{
-                cout << "NO" << endl;
-                break;
-            }
-        }
-        cout << "YES" << endl;
+// int main() {
+//     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+//     int t , n ;
+//     string s;
+//     cin >>t;
+//     while(--t){
+//         cin >>n;
+//         cin >> s;
+//         for(int i =0;i<n;i++){
+//             if(s[i] == s[n-i-1]){
+//                 continue;
+//             }
+//             else{
+//                 cout << "NO" << endl;
+//                 break;
+//             }
+//         }
+//         cout << "YES" << endl;
+//     }
+//     return 0;
+// }
+
+int main(){
+    vector <int > a = {28 ,6 ,66, 13, 17, 41, 27, 80, 40, 67, 86,
+     62, 20, 34, 40, 95, 4 ,27, 18,51,82,1,16,8};
+
+    sort(a.begin(), a.end());
+    //for each loop
+    for(int i:a){
+        cout << i << " ";
     }
-    return 0;
 }
 
 
