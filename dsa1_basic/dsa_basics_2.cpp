@@ -1,20 +1,20 @@
 #include <iostream>
 using namespace std;
 
-// // Function declaration
-// void myFun();
+// Function declaration
+void myFun();
 
-// // The main function
-// int main() {
-//   myFun();  // call the function
-//   myFun();
-//   return 0;
-// }
+// The main function
+int main() {
+  myFun();  // call the function
+  myFun();
+  return 0;
+}
 
-// // Function definition
-// void myFun() {
-//   cout << "I just got excited!" <<endl;
-// }
+// Function definition
+void myFun() {
+  cout << "I just got excited!" <<endl;
+}
 
 ////////////////////////////////////////////////////
 
