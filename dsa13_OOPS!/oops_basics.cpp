@@ -12,7 +12,7 @@ classes do not occupy memory space while objects have memory(dynamic memory allo
 */
 
 #include "bits/stdc++.h"
-#include "class1.cpp" //can make seperate files
+#include "outside_class1.cpp" //can make seperate files
 using namespace std;
 
 //class created
@@ -28,7 +28,7 @@ class books{
     
     //setter -> to set the value
     void setst(string s){
-        st = s;
+        this -> st = s;
     }
 
     //getter -> to get private data value
@@ -42,22 +42,54 @@ class hero {
 
     public:
     string st ="hii";
+    int n = 22;
+    static int timing ;
+
     //It is a constructor (having no return type and no parameter)
     //once declared , default will auto. deletes
     hero(){
-        cout << "constructor" << endl;
+        cout << "constructor called" << endl;
     }
 
     //para cons
     hero(string st){
-        //(*this).st = st; 
-        //it is a pointer, stores vaule of current objects
+
+        //it is a pointer, stores vaule of (current) object
+        //stores address of current obj;
+        //(*this).st = st;
+        this -> st = st;
+        cout << "st-> "  << st << endl;
+    }
+
+    //copy constuctor
+    hero(hero& temp){
+        cout << "copy cons " << endl;
+        this -> st = temp.st;
+    }
+
+    //setter
+    void setst(string st){
         this -> st = st;
     }
+    void setn(int n){
+        this -> n = n;
+    }
+    void print(){
+        cout << st << " " << n << endl;
+    }
+
+    //destructor -> memory deallocation
+    ~hero(){
+        cout << "destructor called"  << endl;
+    }
+
 };
 
-int main(){
+//static -> belong to class ,not obj and initialize outside the class
+int hero :: timing = 10;
 
+int main(){
+    /*
     //outside class
     movies m;
     cout << m.year << endl;
@@ -81,12 +113,38 @@ int main(){
     cout << (*b3).getst() << endl;
     //also
     cout << b3->getst() << endl;
-    
+    */
     
     //whenever object is create , its const. is called.
+    /*
     hero b,c,d;
 
     hero h1("hemo");
-    cout << h1.st;
-    
+    cout << h1.st << endl;
+
+    //copy constructor
+    // hero h2(h1);
+    // cout << h2.st;
+
+    hero h3(h1);
+    h1.setst("ram");
+    h1.setn(100);
+    h1.print();
+    hero h4;
+    h4 = h1; //copy assignment operator
+    h1.print();
+    h4.print();
+    */
+
+    //static 
+    hero R; //auto des. called
+
+    //dynamic
+    hero *h = new hero();
+    //manually des. called
+    delete h;
+
+    cout << hero:: timing << endl; //called directly
+    cout << R.timing << endl;
+    return 0;
 }
