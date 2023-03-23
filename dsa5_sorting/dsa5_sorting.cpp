@@ -22,7 +22,7 @@ int main(){
     //     cout << v << " ";
     // }
     
-    sort(arr.begin() , arr.end());
+     
     for (int i :arr){
         cout << i << "  ";
     }
@@ -50,11 +50,4 @@ int main(){
 
 
 // }
-
-
-
-
-
-
-
 
