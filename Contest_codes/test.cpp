@@ -244,15 +244,31 @@ int main() {
 //     return 0;
 // }
 
-int main(){
-    vector <int > a = {28 ,6 ,66, 13, 17, 41, 27, 80, 40, 67, 86,
-     62, 20, 34, 40, 95, 4 ,27, 18,51,82,1,16,8};
+// int main(){
+//     vector <int > a = {28 ,6 ,66, 13, 17, 41, 27, 80, 40, 67, 86,
+//      62, 20, 34, 40, 95, 4 ,27, 18,51,82,1,16,8};
 
-    sort(a.begin(), a.end());
-    //for each loop
-    for(int i:a){
-        cout << i << " ";
+//     sort(a.begin(), a.end());
+//     //for each loop
+//     for(int i:a){
+//         cout << i << " ";
+//     }
+// }
+
+int main(){
+    int arr[] ={1,2,3,4,5,6,7};
+    int count =0, n =7;
+    int x =12;
+    cout << "starts =";
+    for(int i =0;i<n;i++){
+        for(int j =i+1;j<(n);j++){
+            for(int k =j+1;k<(n);k++){
+                if((arr[i] + arr[j] + arr[k])==x)
+                    count++;
+            }
+        }
     }
+    cout << count;
 }
 
 

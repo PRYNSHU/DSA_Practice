@@ -36,22 +36,22 @@ int main(){
     int *i = new int;
     cout << i << endl;
 
-    //variable size array
-    int m;
-    cin >> m;
-    //arr array pointed to (array of variable size in heap) 
-    int *arr = new int[m];
+    // //variable size array
+    // int m;
+    // cin >> m;
+    // //arr array pointed to (array of variable size in heap) 
+    // int *arr = new int[m];
 
-    //case 1
-    while(true){ //static memory allocated (delete and create...)
-        int i= 5;
-    }
+    // //case 1
+    // while(true){ //static memory allocated (delete and create...)
+    //     int i= 5;
+    // }
     
-    //case 2
-    while (true){  //dynamic memory allocation 
-        int *arr = new int[40];
-    }
-    int *c = new int ;
-    delete c; //to delete dynamic memory
+    // //case 2
+    // while (true){  //dynamic memory allocation 
+    //     int *arr = new int[40];
+    // }
+    // int *c = new int ;
+    // delete c; //to delete dynamic memory
 
 }
