@@ -1,6 +1,7 @@
 {
     "prettier.tabWidth": 4,
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "new": "cpp"
     }
 }
