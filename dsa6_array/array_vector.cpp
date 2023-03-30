@@ -25,7 +25,7 @@ using namespace std;
 //         for(int j=0;j<n;j++){
 //             cout << temp[j] << " ";
 //         }
-//         //nums = temp;
+//         // nums = temp;
 // }
 ///////////////////////////////////////////
 
