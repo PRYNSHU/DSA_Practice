@@ -1,6 +1,37 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+//code Template
+class Solution{
+    public:
+    bool checkIfExist(vector<int>& arr) {
+        sort(arr.begin() , arr.end());
+        int n = arr.size();
+        vector<int > d;
+        for(int i:arr){
+            d.push_back(2 * arr[i]);
+        }
+
+        for(int i =0, j =0; i<n && j < n;){
+            if(arr[i] == d[j]){
+                return 1;
+            }else if(arr[i] > d[j]) j++;
+            else  i++;
+        }
+        return 0;
+    }
+};
+
+int main(){
+    vector<int> arr = {3,1,7,11};
+    Solution sol;
+    bool ans = sol.checkIfExist(arr);
    
+    cout << ans;
+}  
+
+
+
 // int main() {
 //     int t,N,count ;
 //     string S;
@@ -255,27 +286,21 @@ int main() {
 //     }
 // }
 
-int main(){
-    int arr[] ={1,2,3,4,5,6,7};
-    int count =0, n =7;
-    int x =12;
-    cout << "starts =";
-    for(int i =0;i<n;i++){
-        for(int j =i+1;j<(n);j++){
-            for(int k =j+1;k<(n);k++){
-                if((arr[i] + arr[j] + arr[k])==x)
-                    count++;
-            }
-        }
-    }
-    cout << count;
-}
-
-
-
-
-
-
+// int main(){
+//     int arr[] ={1,2,3,4,5,6,7};
+//     int count =0, n =7;
+//     int x =12;
+//     cout << "starts =";
+//     for(int i =0;i<n;i++){
+//         for(int j =i+1;j<(n);j++){
+//             for(int k =j+1;k<(n);k++){
+//                 if((arr[i] + arr[j] + arr[k])==x)
+//                     count++;
+//             }
+//         }
+//     }
+//     cout << count;
+//}
 
 
 
