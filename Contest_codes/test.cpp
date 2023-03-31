@@ -1,34 +1,81 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//code Template
-class Solution{
-    public:
-    bool checkIfExist(vector<int>& arr) {
-        sort(arr.begin() , arr.end());
-        int n = arr.size();
-        vector<int > d;
-        for(int i:arr){
-            d.push_back(2 * arr[i]);
-        }
+// } Driver Code Ends
+//User function Template for C++
 
-        for(int i =0, j =0; i<n && j < n;){
-            if(arr[i] == d[j]){
-                return 1;
-            }else if(arr[i] > d[j]) j++;
-            else  i++;
+class Solution
+{
+    public:
+        vector <int> lexicographicallyLargest(vector <int> &a,int n)
+        {
+            // Code here
+            cout << "in class";
+            for(int i =1;i<n;i+2){
+                
+                if(i>0 && a[i-1] < a[i] && a[i-1] < a[i+1] &&  (a[i+1]+a[i])%2 ==0 )
+                    swap(a[i-1]  , a[i+1]);
+                    
+                else if(i>0 && a[i-1] < a[i]  &&  (a[i+1]+a[i])%2 ==0)
+                    swap(a[i-1] , a[i]);
+            }
+            return a;
         }
-        return 0;
-    }
 };
 
-int main(){
-    vector<int> arr = {3,1,7,11};
-    Solution sol;
-    bool ans = sol.checkIfExist(arr);
+//{ Driver Code Starts.
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        cin>>n;
+        vector <int> a(n);
+        for(auto &j:a)
+            cin>>j;
+        Solution s;
+        vector <int> b=s.lexicographicallyLargest(a,n);
+        for(auto i:b)
+            cout<<i<<" ";
+        cout<<endl;
+    }
+    cout <<"all ohk";
+    return 0;
+}
+
+
+// } Driver Code Ends
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// //code Template
+// class Solution{
+//     public:
+//     int removeDuplicates(vector<int>& nums) {
+//         int k =1;
+//         //value of k
+//         for(int i =0;i<nums.size();i++){
+//             if(i>0 && nums[i-1] != nums[i])
+//                 k++;
+//         }
+//         //change the array
+
+//         return k;
+//     }
+// };
+
+// int main(){
+//     vector<int> arr = {0,0,1,1,2,2,3,4};
+//     Solution sol;
+//     int ans = sol.removeDuplicates(arr);
    
-    cout << ans;
-}  
+//     cout << ans;
+// }  
 
 
 
