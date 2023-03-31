@@ -1,6 +1,7 @@
 #include "bits/stdc++.h"
 using namespace std;
 
+//creating the Node
 class Node{
 public:
     int data;
@@ -15,6 +16,8 @@ public:
 void insetAtHead(Node* &head , int d){
     //create new node
     Node *temp = new Node(d);
+
+    //connecting the head
     temp->next = head;
     head = temp;
 }
@@ -56,6 +59,7 @@ void insetAtPost(Node * &head, int p , int d ){
 }
 
 void deleteNode(Node* &head , int p){
+
     //take temp to that position
     Node* temp = head;
     int cnt =1;
@@ -70,11 +74,13 @@ void deleteNode(Node* &head , int p){
     temp->next = curr->next;
 
     //memory free
+    curr->next = NULL;
+    delete curr;
     
 }
 
 int main(){
-    Node * one = new Node(10);  
+    Node * one = new Node(10);
     Node * two = new Node(20);
 
     //connect it
