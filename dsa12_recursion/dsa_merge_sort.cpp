@@ -62,6 +62,7 @@ void merge(int *arr, int s, int e) {
         }
     }   
 
+    //for pending elements of the array
     while(index1 < len1) {
         arr[mainArrayIndex++] = first[index1++];
     }
@@ -85,10 +86,8 @@ void merge(int *arr, int s, int e) {
 void mergeSort(int *arr, int s, int e) {
 
     //base case
-    if(s >= e) {
-        return;
-    }
-    
+    if(s >= e)
+        return;   
     int mid = (s+e)/2;
 
     //left part sort karna h 
@@ -104,7 +103,7 @@ void mergeSort(int *arr, int s, int e) {
 }
 
 int main() {
-    int arr[7] = {3,7,0,1,5,8,3};
+    int arr[7] = {5,8,9,6,4,7};
     int n = 7;
 
     mergeSort(arr, 0, n-1);
@@ -112,7 +111,7 @@ int main() {
     cout << "final-" << endl;
     for(int i:arr){
         cout << i << " ";
-    } cout << endl;
+    }
 
     return 0;
 }
