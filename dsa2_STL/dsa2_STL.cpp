@@ -94,13 +94,20 @@ void list1(){
 }
 
 void stack1(){
-    stack<string > s;
-    s.push("a");
-    s.push("b");
-    s.push("c");
-    cout<< s.top();
-    s.pop();
-    cout << s.top();
+    stack<int> stack;
+    stack.push(21);// all values must be of same data type
+    stack.push(22);
+    stack.push(24);
+    stack.push(25);
+    int num=0;
+      stack.push(num);
+    stack.pop();
+    stack.pop();
+   
+    while (!stack.empty()) {
+        cout << stack.top() <<" ";
+        stack.pop();
+    }
 }
 
 void queue1(){
@@ -135,7 +142,7 @@ int main(){
     //vector1();
     // deque1();
     // list1();
-    // stack1();
+    stack1();
     // queue1();
 }
 
