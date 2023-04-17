@@ -1,5 +1,86 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+
+
+void solve(int N, vector<int> &A, vector<int> &B) {
+    vector<int> AEvenOdd[2], BEvenOdd[2];
+    
+    long long sum1 = 0, sum2 = 0;
+    
+    for(int i = 0; i < N; ++i) {
+        sum1 += A[i];
+        sum2 += B[i];
+        
+        if(abs(A[i]) % 2 == 0)
+            AEvenOdd[0].push_back(A[i]);
+        else
+            AEvenOdd[1].push_back(A[i]);
+            
+        if(abs(B[i]) % 2 == 0)
+            BEvenOdd[0].push_back(B[i]);
+        else
+            BEvenOdd[1].push_back(B[i]);
+    }
+
+    for(int h : AEvenOdd[0]){
+        cout << h << " ";
+    }cout << endl;
+
+    for(int g : BEvenOdd[1]){
+        cout << g << " ";
+    }
+}
+
+
+
+int main(){
+
+    vector<int> A = {2,5,6};
+    vector<int> B = {1,2,10};
+
+    solve(3 ,A , B);
+
+}
+//need to do potd gfg;
+// class Solution {
+//   public:
+//     long long solve(int N, vector<int> &A, vector<int> &B) {
+//         // code here
+//         int n , m ;
+//         for(int i =1; i<=N; i++){
+            
+//             for(int k =1;k <= N;k++){
+                
+//                 if(B[k] < A[i]){
+                    
+//                     if((A[i] - B[k])%2 ==0){
+//                         m = (A[i] - B[k])/2;
+//                         B.erase(B.begin() + k);
+//                     }
+                        
+//                 }else if(B[k] > A[i]){
+                    
+//                     if((B[k] - A[i])%2 ==0){
+//                             n = (B[k] - A[i])/2;
+//                             B.erase(B.begin() + k);
+//                         }
+//                 }else{
+//                     B.erase(B.begin() + k);
+                    
+//                 }
+                    
+//             }
+//         }
+//         if(n == m )
+//             return n;
+//         else
+//             return -1;
+//     }
+// };
+
+
+
 // // void rotate(vector<int>& nums, int k) {
       
 // //     // just to practice the modulus approach
@@ -433,41 +514,71 @@ using namespace std;
 // //     cout << count;
 // //}
 
-void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-        //create storage array
-        vector<int> arr; 
-        int i =0;
-        int j =0;
-        while(i < m && j < n){
-            if(nums1[i] <= nums2[j])
-                arr.push_back(nums1[i++]);
-            else
-                arr.push_back(nums2[j++]);
+// void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+//         //create storage array
+//         vector<int> arr; 
+//         int i =0;
+//         int j =0;
+//         while(i < m && j < n){
+//             if(nums1[i] <= nums2[j])
+//                 arr.push_back(nums1[i++]);
+//             else
+//                 arr.push_back(nums2[j++]);
 
-        }
-        while(j < n){
-            arr.push_back(nums2[j++]);
-        }
+//         }
+//         while(j < n){
+//             arr.push_back(nums2[j++]);
+//         }
 
-        for(int i =0;i<(m+n); i++){
-            nums1[i] = arr[i];
-        }
-}
+//         for(int i =0;i<(m+n); i++){
+//             nums1[i] = arr[i];
+//         }
+// }
 
-int main(){
-    vector<int> nums1 = {5,2,4,0,0,0};
-    vector<int> nums2 = {7,5,6};
+// int main(){
+//     vector<int> nums1 = {5,2,4,0,0,0};
+//     vector<int> nums2 = {7,5,6};
 
-    merge(nums1 , 3 , nums2 , 3);
-    for(int i: nums1){
-        cout << i << " ";
-    }
+//     merge(nums1 , 3 , nums2 , 3);
+//     for(int i: nums1){
+//         cout << i << " ";
+//     }
     
-}
+// }
 
+// void validateStackSequences(vector<int>& pushed, vector<int>& popped) {
+//         stack<int> s;
+//         int n = pushed.size();
+//         int j =0;
+//         int i =0;
+//         for(;i< n;i++){
+            
+//             if(pushed[i] != popped[j]){
+//                 s.push(pushed[i]);
+//             }else{
+//                 i++; j++;
+//             }
+//         }
+//         cout << s.top() << endl;
+//         cout << " J " << j << " ,I " << i << endl;
 
+//         while(!s.empty()){
+//             if(s.top() ==  popped[j]){
+//                 s.pop();
+//                 j++;
+//             }else
+//                 return;
+//         }
+//         return ;
+//     }
 
+// int main(){
+//     vector<int> pushed = {1,2,3,4,5};
+//     vector<int> popped = {4,5,3,2,1};
 
+//     validateStackSequences(pushed , popped);
+    
+// }
 
 
 
