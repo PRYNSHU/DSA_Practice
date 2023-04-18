@@ -31,6 +31,7 @@ void insertAtHead(Node* &head , int d){
 
 }
 
+
 int main(){
     Node * one = new Node(10);
     Node * two = new Node(20);
