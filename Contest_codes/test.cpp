@@ -1,47 +1,72 @@
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+// using namespace std;
+
+#include <iostream>
 using namespace std;
 
+int main() {
+	// your code goes here
+	int t;
+	cin >> t;
+	while(t--){
+	    int time =0;
+	    int n;
+	    cin >> n;
+	    //odd case
+	    if(n&1){
+	        time = abs(50 - (n-3))/2;
+	        cout << time +1 << endl;
+	    }
+	    else{
+	    //even case
+	        time = abs(50 -n)/2;
+	        cout << time << endl;
+	    }
+	    
+	}7 
+	return 0;
+}
 
 
-void solve(int N, vector<int> &A, vector<int> &B) {
-    vector<int> AEvenOdd[2], BEvenOdd[2];
+// void solve(int N, vector<int> &A, vector<int> &B) {
+//     vector<int> AEvenOdd[2], BEvenOdd[2];
     
-    long long sum1 = 0, sum2 = 0;
+//     long long sum1 = 0, sum2 = 0;
     
-    for(int i = 0; i < N; ++i) {
-        sum1 += A[i];
-        sum2 += B[i];
+//     for(int i = 0; i < N; ++i) {
+//         sum1 += A[i];
+//         sum2 += B[i];
         
-        if(abs(A[i]) % 2 == 0)
-            AEvenOdd[0].push_back(A[i]);
-        else
-            AEvenOdd[1].push_back(A[i]);
+//         if(abs(A[i]) % 2 == 0)
+//             AEvenOdd[0].push_back(A[i]);
+//         else
+//             AEvenOdd[1].push_back(A[i]);
             
-        if(abs(B[i]) % 2 == 0)
-            BEvenOdd[0].push_back(B[i]);
-        else
-            BEvenOdd[1].push_back(B[i]);
-    }
+//         if(abs(B[i]) % 2 == 0)
+//             BEvenOdd[0].push_back(B[i]);
+//         else
+//             BEvenOdd[1].push_back(B[i]);
+//     }
 
-    for(int h : AEvenOdd[0]){
-        cout << h << " ";
-    }cout << endl;
+//     for(int h : AEvenOdd[0]){
+//         cout << h << " ";
+//     }cout << endl;
 
-    for(int g : BEvenOdd[1]){
-        cout << g << " ";
-    }
-}
+//     for(int g : BEvenOdd[1]){
+//         cout << g << " ";
+//     }
+// }
 
 
 
-int main(){
+// int main(){
 
-    vector<int> A = {2,5,6};
-    vector<int> B = {1,2,10};
+//     vector<int> A = {2,5,6};
+//     vector<int> B = {1,2,10};
 
-    solve(3 ,A , B);
+//     solve(3 ,A , B);
 
-}
+// }
 //need to do potd gfg;
 // class Solution {
 //   public:
