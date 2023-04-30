@@ -60,6 +60,10 @@ void insetAtPost(Node * &head, int p , int d ){
 
 void deleteNode(Node* &head , int p){
 
+    if(p == 1){
+
+
+    }else{
     //take temp to that position
     Node* temp = head;
     int cnt =1;
@@ -76,6 +80,7 @@ void deleteNode(Node* &head , int p){
     //memory free
     curr->next = NULL;
     delete curr;
+    }
     
 }
 
