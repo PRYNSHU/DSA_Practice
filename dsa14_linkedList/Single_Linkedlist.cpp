@@ -59,13 +59,17 @@ void insetAtPost(Node * &head, int p , int d ){
 }
 
 void deleteNode(Node* &head , int p){
-
+    Node* temp = head;
+    //for starting node
     if(p == 1){
 
-
-    }else{
+        head = head->next;
+        temp->next = NULL;
+        delete temp;
+    }
+    else{
     //take temp to that position
-    Node* temp = head;
+    
     int cnt =1;
     while(cnt < p -1){
         temp = temp->next;
@@ -106,7 +110,7 @@ int main(){
     cout << "head " << head->data << endl;
     cout << "tail " << tail->data << endl;
 
-    deleteNode(head , 4);
+    deleteNode(head , 1);
     print(head);
 
 }
