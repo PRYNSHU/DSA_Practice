@@ -22,6 +22,16 @@ class Node {
   // }
   
 };
+//linked list using recursion
+
+void printlink(Node* head){
+  //base cond
+  if(head == NULL)
+    return ;
+  cout << head->value << " ";
+  return printlink(head->next);
+
+}
 
 int main() {
 
@@ -35,16 +45,17 @@ int main() {
 
   // Assign value values
   // (*one).value = 1;
-  one->value =3;
+  one->value =1;
   two->value = 2;
-  three->value = 1;
+  three->value = 3;
 
   // Connect nodes
   // (*one).next = two;
   one->next = two;
   two->next = three;
   three->next = NULL;
-  
+  Node* head = one;
+
   //IMP -> one , two , three are all pointers of Node class data type
   //pointing to heap memory.
   int *p = new int;
@@ -52,11 +63,11 @@ int main() {
   cout << one->value << " " << one->next << " "<<  two << endl;
   
   // print the linked list value
-  Node* head = one;
-  while (head != NULL) {
-    cout << head->value << " ";
-    head = head->next;
-  }
+//   while (head != NULL) {
+//     cout << head->value << " ";
+//     head = head->next;
+//   }
+  printlink(head);
 }
 
 ///////////////////////////////////////////////
