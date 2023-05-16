@@ -88,6 +88,32 @@ void deleteNode(Node* &head , int p){
     
 }
 
+
+bool pal(vector<int> arr){
+        
+        int s = 0;
+        int e = arr.size() -1;
+        
+        while(s>= e){
+            if(arr[s] != arr[e])
+                return 0;
+        }
+        
+        return 1;
+    }
+    
+    bool isPalindrome(Node *head)
+    {
+        Node* temp = head;
+        vector<int> arr;
+        
+        while(temp!= NULL){
+            arr.push_back(temp->data);
+            temp = temp->next;
+        }
+        
+        return pal(arr);
+    }
 int main(){
     Node * one = new Node(10);
     Node * two = new Node(20);
@@ -112,5 +138,7 @@ int main(){
 
     deleteNode(head , 1);
     print(head);
+
+    cout << isPalindrome(head);
 
 }
