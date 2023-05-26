@@ -11,6 +11,7 @@ using namespace std;
  
 void array1(){ //memory already allocated 
     int a[4]= { 3,45,6,5};
+    int arr[20] = {0}; //initialize all with zero
     array <int,4> b = {1,7,43,4};
 
     cout << a[2] << " " << b[2] <<endl;
