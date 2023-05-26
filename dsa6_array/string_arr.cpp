@@ -1,5 +1,4 @@
-#include"iostream"
-#include "typeinfo"
+#include "bits/stdc++.h"
 using namespace std;
 
 int getlen(char ch[]){
@@ -10,6 +9,15 @@ int getlen(char ch[]){
         i++;
     }
     return cnt;
+}
+
+void reverse(string s ,int n){
+    int st = 0;
+    int e = n-1;
+    while(st<e){
+        swap(s[st++] , s[e--]);   
+    }
+    cout << "reverse " << s << endl;
 }
 
 void conversion(){
@@ -28,9 +36,37 @@ void conversion(){
     cout << m + 3 << endl;
 }
 
+void fun1(){
+    int cnt = 10;
+    string s = to_string(cnt); // int to string
+    cout << s << endl;
+    char c;
+    //string to char
+    for(char ch : s){
+        c = ch;
+    }
+    int n = c - '0';
+    // int n1 = s - '0'; 
+    cout << n + 4<< endl;
+}
+
+void fun2(){
+
+   string str = "Hemlo world";
+   str.append("z"); //adding char/string
+   str.erase(1 , 3); //erase the three element form 1 index
+   cout << str << endl;
+
+   str.erase(str.begin() + 3); //erase at ith position
+    cout << str << endl;
+
+    str.pop_back();
+    str.push_back('m');
+    cout << str << endl;
+}
 
 int main(){
-
+    
     char c = 'z'; // as a char element
     char ch[10];  // as a char array, which stores elements form 0 to 9
     cout << "print it" << endl;
@@ -44,11 +80,15 @@ int main(){
     int len = getlen(ch);
     cout << len << endl;
 
-    swap(ch[0] , ch[len-1]);
+    char ch[50];
+    cin.getline(ch , 50); //to print with space for input
     cout << ch << endl;
 
     // conversion();
-    
+    // reverse(ch , len);
+
+    // fun1();
+    // fun2();
 
 }
 
