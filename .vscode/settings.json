@@ -1,8 +1,10 @@
 {
     "prettier.tabWidth": 4,
     "files.associations": {
+        "*.tex": "latex",
         "iostream": "cpp",
         "new": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "ostream": "cpp"
     }
 }
