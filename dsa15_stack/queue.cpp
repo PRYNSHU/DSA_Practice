@@ -1,7 +1,6 @@
 #include "bits/stdc++.h"
 using namespace std;
 
-
 class Queue {
     int *arr;
     int size;
@@ -14,8 +13,6 @@ public:
         f =0;
         rear =0;
     }
-
-    /*----------------- Public Functions of Queue -----------------*/
 
     bool isEmpty() {
         if(f == rear)
@@ -60,34 +57,42 @@ public:
     }
 };
 
+void basics(){
+
+    queue<int> q;
+    q.push(11);
+    q.push(12);
+    q.push(13);
+    q.push(14);
+
+    cout << q.front() << endl;
+    q.pop();
+    cout << q.front() << endl;
+    cout << q.empty() << endl;
+
+    cout << q.back() << endl;
+
+    cout << "print it!" << endl;
+
+    while(!q.empty()){
+        cout << q.front() << " ";
+        q.pop();
+    }
+
+}
+
 
 int main(){
 
     //queue followed FIFO approach
     //imagine like a row of children
 
-    // queue<int> q;
-    // q.push(11);
-    // q.push(12);
-    // q.push(13);
-    // q.push(14);
-
-    // cout << q.front() << endl;
-    // q.pop();
-    // cout << q.front() << endl;
-    // cout << q.empty() << endl;
-
-    // cout << q.back() << endl;
-
-    // cout << "print it!" << endl;
-
-    // while(!q.empty()){
-    //     cout << q.front() << " ";
-    //     q.pop();
-    // }
-
+    basics();
     Queue q1;
     q1.enqueue(33);
     cout << "empty " <<  q1.isEmpty() << endl;
 
 }
+
+
+

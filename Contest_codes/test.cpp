@@ -4,28 +4,35 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-	// your code goes here
-	int t;
-	cin >> t;
-	while(t--){
-	    int time =0;
-	    int n;
-	    cin >> n;
-	    //odd case
-	    if(n&1){
-	        time = abs(50 - (n-3))/2;
-	        cout << time +1 << endl;
-	    }
-	    else{
-	    //even case
-	        time = abs(50 -n)/2;
-	        cout << time << endl;
-	    }
-	    
-	}7 
-	return 0;
+
+
+int main(){
+	string s = "bcde";
+	s[0] = s[0] -1;
+	cout << s;
 }
+// int main() {
+// 	// your code goes here
+// 	int t;
+// 	cin >> t;
+// 	while(t--){
+// 	    int time =0;
+// 	    int n;
+// 	    cin >> n;
+// 	    //odd case
+// 	    if(n&1){
+// 	        time = abs(50 - (n-3))/2;
+// 	        cout << time +1 << endl;
+// 	    }
+// 	    else{
+// 	    //even case
+// 	        time = abs(50 -n)/2;
+// 	        cout << time << endl;
+// 	    }
+	    
+// 	}7 
+// 	return 0;
+// }
 
 
 // void solve(int N, vector<int> &A, vector<int> &B) {
