@@ -67,28 +67,30 @@ void fun2(){
 
 int main(){
     
-    char c = 'z'; // as a char element
-    char ch[10];  // as a char array, which stores elements form 0 to 9
-    cout << "print it" << endl;
+    // char c = 'z'; // as a char element
+    // char ch[10];  // as a char array, which stores elements form 0 to 9
+    // cout << "print it" << endl;
 
-    cin >> ch;
-    cout << "any value " << ch[0] << endl; //print that element
-    cout <<  "full value " << ch << endl;
+    // cin >> ch;
+    // cout << "any value " << ch[0] << endl; //print that element
+    // cout <<  "full value " << ch << endl;
 
-    // ch[2] = '\0';        //null character ( to break the array)
-    // cout << ch << endl; //print whole array
-    int len = getlen(ch);
-    cout << len << endl;
+    // // ch[2] = '\0';        //null character ( to break the array)
+    // // cout << ch << endl; //print whole array
+    // int len = getlen(ch);
+    // cout << len << endl;
 
-    char ch[50];
-    cin.getline(ch , 50); //to print with space for input
-    cout << ch << endl;
+    // char ch[50];
+    // cin.getline(ch , 50); //to print with space for input
+    // cout << ch << endl;
 
     // conversion();
     // reverse(ch , len);
 
     // fun1();
     // fun2();
+
+    cout << 'm' +1 ;
 
 }
 
