@@ -6,5 +6,6 @@
         "new": "cpp",
         "vector": "cpp",
         "ostream": "cpp"
-    }
+    },
+    "files.autoSave": "afterDelay"
 }
