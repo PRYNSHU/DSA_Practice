@@ -9,9 +9,7 @@ Here , I add how I am preparing for DSA
 
 1. LEETCODE
 2. GFG PRACTICE
-3. CODEFORCES
-4. CODECHEF
-5. HACKERRANK 
+3. CODECHEF
 
 <br>
 ==============================
