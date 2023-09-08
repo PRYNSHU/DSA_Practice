@@ -9,7 +9,7 @@ class Queue {
 public:
     Queue(){
         size = 10009;
-        arr = new int [size]; // here int arr[size] is different?
+        arr = new int[size]; // here int arr[size] is different?
         f =0;
         rear =0;
     }
@@ -90,7 +90,7 @@ int main(){
     basics();
     Queue q1;
     q1.enqueue(33);
-    cout << "empty " <<  q1.isEmpty() << endl;
+    cout << "\nempty " <<  q1.isEmpty() << endl;
 
 }
 

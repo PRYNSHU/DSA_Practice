@@ -29,7 +29,7 @@ class stack1{
         int *arr;
         int size;
     
-    //cons
+    //constructor
     stack1(int size){
         this->size = size;
         arr = new int[size]; //dynamically array declared
