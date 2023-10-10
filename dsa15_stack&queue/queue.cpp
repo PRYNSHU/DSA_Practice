@@ -64,11 +64,12 @@ void basics(){
     q.push(12);
     q.push(13);
     q.push(14);
-
+    cout << "size " << q.size() << endl;
     cout << q.front() << endl;
     q.pop();
     cout << q.front() << endl;
     cout << q.empty() << endl;
+
 
     cout << q.back() << endl;
 

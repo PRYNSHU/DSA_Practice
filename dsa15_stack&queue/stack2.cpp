@@ -7,6 +7,7 @@ void reverse(string s){
     for(int i =0;i<s.length();i++){
         st.push(s[i]);
     }
+    cout << "size " << st.size() << endl;
 
     string ans = "";
     while(!(st.empty())){
@@ -19,5 +20,4 @@ void reverse(string s){
 int main(){
     string s = "workd";
     reverse(s);
-
 }
