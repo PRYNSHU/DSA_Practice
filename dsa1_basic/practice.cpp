@@ -159,10 +159,17 @@ public:
 //     cout << "End of main\n";
 // }
 
-int main(){
+// C++ code to illustrate Methods returning 
+// a value using return statement 
 
-    int arr[5] = {3,8,5,2,7};
-
-    //shift right
-    
-}
+// non-void return type 
+// function to calculate sum 
+int SUM(int a, int b) 
+{ 
+	int s1 = a + b; 
+    cout << "hello" ;
+	// method using the return 
+	// statement to return a value 
+	return s1; 
+    cout << "bro";
+} 
