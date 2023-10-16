@@ -1,24 +1,24 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    for(int i=1;i<=5;i++){
-        int space= 5-i;
-        for(int j=1;j<=space;j++){
-            cout <<" ";
-        } 
-        for(int k=1;k<=i;k++){
-            cout <<k;
-        }
-        for (int n=1;n<=i-1;n++){
-            cout <<i-n;
-        }
-        for(int j=1;j<=space;j++){
-            cout <<" ";
-        }
-        cout << endl;
-    }
-}
+// int main(){
+//     for(int i=1;i<=5;i++){
+//         int space= 5-i;
+//         for(int j=1;j<=space;j++){
+//             cout <<" ";
+//         } 
+//         for(int k=1;k<=i;k++){
+//             cout <<k;
+//         }
+//         for (int n=1;n<=i-1;n++){
+//             cout <<i-n;
+//         }
+//         for(int j=1;j<=space;j++){
+//             cout <<" ";
+//         }
+//         cout << endl;
+//     }
+// }
 //////////////////////////////////////
 
 //didn't get the ans:
