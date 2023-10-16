@@ -252,24 +252,33 @@ using namespace std; // still confusion.
 ///////////////////////////////////////////////////////
 
 // int main(){
-//     struct { //use for one more data types
+//     //use for one more data types
+//     struct cars{
 //         string brand;
 //         string model;
 //         int year;
-//     } myCar1, myCar2; // We can add variables by separating them with a comma here
+//     }; // We can add variables by separating them with a comma here
 
-//     // Put data into the first structure
-//     myCar1.brand = "BMW";
-//     myCar1.model = "X5";
-//     myCar1.year = 1999;
+//     cars a[3];
+//     cars b; 
+//     b.brand = "volvo";
+//     cout << b.brand << endl;
 
-//     // Put data into the second structure
-//     myCar2.brand = "Ford";
-//     myCar2.model = "Mustang";
-//     myCar2.year = 1969;
+//     a[0].brand = "BMW";
+//     a[0].model = "X5";
+//     a[0].year = 1999;
 
-//     // Print the structure members
-//     cout << myCar1.brand << " " << myCar1.model << " " << myCar1.year << "\n";
-//     cout << myCar2.brand << " " << myCar2.model << " " << myCar2.year << "\n";
+//     a[1].brand = "ferrari";
+//     a[1].model = "X5";
+//     a[1].year = 2001;
+
+//     a[2].brand = "benz";
+//     a[2].model = "X5";
+//     a[2].year = 2002;
+
+//     for(auto i : a){
+//         cout << i.brand << " "<< i.model << " " << i.year << endl;
+//     }
+
 // }
 

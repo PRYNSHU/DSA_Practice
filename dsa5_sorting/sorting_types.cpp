@@ -38,7 +38,7 @@ using namespace std;
 
 //             if(arr[j] > temp)
 //                 //shifting
-//                 arr[j+1] = arr[j];
+//                 swap(arr[j+1] , arr[j]);
 //             else 
 //                 break;
 //             j--;
