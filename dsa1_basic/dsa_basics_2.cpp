@@ -15,6 +15,29 @@ int main() {
 void myFun() {
   cout << "I just got excited!" <<endl;
 }
+/////////////////////////////////////////////
+
+// void fun1(int n1){ //call by value
+//   n1 = 8;
+// }
+
+// void fun2(int *n1){ //call by reference with pointer argument
+//   *n1 = 8;
+// }
+
+// void fun3(int &n1){ //call by reference with reference argument
+//   n1 = 8;
+// }
+
+// int main(){
+//   int n =2;
+
+//   fun1(n);
+//   // fun2(&n);
+//   // fun3(n);
+//   cout << n << endl;
+
+// }
 
 ////////////////////////////////////////////////////
 
