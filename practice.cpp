@@ -194,15 +194,18 @@ void mergesort(int *arr , int l , int h){
     // merge(arr, l, mid, h);
 
 }
-void fun1(int &n1){
-    n1 = NULL;
-}
+// void fun1(int &n1){
+//     n1 = NULL;
+// }
 int main(){
 
-    int arr[5] = {3,2,4,1,3};
+    // int arr[5] = {3,2,4,1,3};
 
-    // mergesort(arr, 0, 4);
-    int n;
-    fun1(&n);
-    cout << n << endl;
+    // // mergesort(arr, 0, 4);
+    // int n;
+    // fun1(&n);
+    // cout << n << endl;
+
+   
+
 }

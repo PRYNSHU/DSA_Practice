@@ -32,6 +32,15 @@ int main(){
     // //(new a variable is created, but pointing to n of main function)
     // cout << "after: " << n << endl;
 
+    //pointer vs ref
+    // int n = 3;
+    // int *n1 = &n; // pointer
+    // cout << n1 << " " << *n1 << " " << &n << endl;
+
+    // int m = 5;
+    // int &a = m; //reference variable
+    // cout << a << " " << &a << " "<< &m << endl;
+
     //DYNAMIC MEMORY ALLOCATION
     int *i = new int;
     // int *i = new int(6);
