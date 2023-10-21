@@ -159,10 +159,53 @@ public:
 //     cout << "End of main\n";
 // }
 
+// C++ code to illustrate Methods returning 
+// a value using return statement 
+
+// non-void return type 
+// function to calculate sum 
+int SUM(int a, int b) 
+{ 
+	int s1 = a + b; 
+    cout << "hello" ;
+	// method using the return 
+	// statement to return a value 
+	return s1; 
+    cout << "bro";
+} 
+
+void merge(int *arr, int l, int mid , int h){
+
+    
+    
+}
+
+//MERGE SORT
+void mergesort(int *arr , int l , int h){
+
+    //base
+    if(l == h) return;
+    int mid = (l+h)/2;
+
+    mergesort(arr, l, mid);
+    mergesort(arr, mid+1, h);
+
+    //merge
+    // merge(arr, l, mid, h);
+
+}
+// void fun1(int &n1){
+//     n1 = NULL;
+// }
 int main(){
 
-    int arr[5] = {3,8,5,2,7};
+    // int arr[5] = {3,2,4,1,3};
 
-    //shift right
-    
+    // // mergesort(arr, 0, 4);
+    // int n;
+    // fun1(&n);
+    // cout << n << endl;
+
+   
+
 }
