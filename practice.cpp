@@ -197,15 +197,29 @@ void mergesort(int *arr , int l , int h){
 // void fun1(int &n1){
 //     n1 = NULL;
 // }
+// int main(){
+
+//     // int arr[5] = {3,2,4,1,3};
+
+//     // // mergesort(arr, 0, 4);
+//     // int n;
+//     // fun1(&n);
+//     // cout << n << endl;
+
+//    cout << "hello kamal ";
+
+// }
+
+
 int main(){
 
-    // int arr[5] = {3,2,4,1,3};
+    int l , m;
+    cin >> l >> m;
+    int sum =0;
+    int arr[l];  int v =0;
+    while(l--){
+        sum = sum + (v*v +1)%m;
 
-    // // mergesort(arr, 0, 4);
-    // int n;
-    // fun1(&n);
-    // cout << n << endl;
-
-   
-
+    }
+    cout << sum%m;
 }

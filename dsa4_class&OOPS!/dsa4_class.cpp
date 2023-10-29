@@ -1,45 +1,60 @@
 #include "iostream"
-//#include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-class add{
-    public:
-    int a,b;
-    void ans(){
-        cout << " ans is " << (a+b) << endl;
-}
-}; 
-int main(){
-    add obj1;
-    obj1.a= 4;
-    obj1.b=8;
-    obj1.ans();
-}
-////////////////////////////////////
-// C++ program to demonstrate accessing of data members
-
-// class Geeks {
-// 	// Access specifier
-// public:
-// 	// Data Members
-// 	string geekname;
-// 	// Member Functions()
-// 	void printname() { cout << "Geekname is:" 
-// 	<< geekname <<endl; }
+// class add{
+//     public:
+//     int a,b;
+//     void ans(){
+//         cout << "ans is " << a+b << endl;
+//     }
 // };
-// int main()
-// {
-// 	// Declare an object of class geeks
-// 	Geeks obj1;
-// 	Geeks obj2;
-// 	// accessing data member
-// 	obj1.geekname = "Abhi";
-// 	obj2.geekname = "don";
-// 	// accessing member function
-// 	obj1.printname();
-// 	obj2.printname();
-// 	return 0;
+
+// int main(){
+
+//     add obj1;
+//     add obj2;
+//     //different objects means data will be completely seperated
+//     obj1.a= 4;
+//     obj1.b=8;
+//     obj1.ans();
+
+//     obj2.a= 1;
+//     obj2.ans();
+
 // }
+
+////////////////////////////////////
+
+// class Geeks{ 
+// public: 
+// 	int id;
+// 	//Default Constructor
+// 	Geeks(){
+// 		cout << "Default Constructor called" << endl; 
+// 		id = -1;
+// 	}
+	
+// 	//Parameterized Constructor
+//     //IMP: If an para cons is created then there is NO default cons left in the class
+// 	Geeks(int x){
+// 		cout <<"Parameterized Constructor called "<< endl; 
+// 		id = x; 
+// 	}
+// };
+
+// int main(){
+    
+// 	// obj1 will call Default Constructor 
+// 	Geeks obj1; 
+// 	cout <<"Geek id is: "<<obj1.id << endl; 
+	
+// 	// obj2 will call Parameterized Constructor 
+// 	Geeks obj2(21); 
+// 	cout <<"Geek id is: " <<obj2.id << endl; 
+	
+// }
+
 ///////////////////////////////////
 
 // #include<iostream>
@@ -65,7 +80,34 @@ int main(){
 // return 0;
 // }
 
+////////////////////////////////////////////
+// class A {
+// public:
+// 	A(){ 
+// 		cout << "A's Constructor Called " << endl; 
+// 	}
+// 	void one(){
+// 		cout << "class A" << endl;
+// 	}
+// };
 
+// class B {
+// 	A a;
+// 	// static A a;
+
+// public:
+// 	B(){ 
+// 		cout << "B's Constructor Called " << endl; 
+// 	}
+// 	//AN ERROR
+// 	// cout << "class B " << endl;
+// };
+
+// int main()
+// {	
+// 	B b;
+// 	return 0;
+// }
 
 
 
