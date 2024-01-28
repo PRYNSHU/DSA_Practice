@@ -211,15 +211,141 @@ void mergesort(int *arr , int l , int h){
 // }
 
 
-int main(){
+// int main(){
 
-    int l , m;
-    cin >> l >> m;
-    int sum =0;
-    int arr[l];  int v =0;
-    while(l--){
-        sum = sum + (v*v +1)%m;
+//     int l , m;
+//     cin >> l >> m;
+//     int sum =0;
+//     int arr[l];  int v =0;
+//     while(l--){
+//         sum = sum + (v*v +1)%m;
 
+//     }
+//     cout << sum%m;
+// }
+
+// class Solution
+// {
+//     public:
+//     //Function to reverse words in a given string.
+//     // string reverseWords(string S) 
+//     // {
+//     //     string ans = "";
+//     //     for(int i = S.length() -1; i>=0; i--){
+            
+//     //         if(S[i] == '.' || i == 0){
+//     //             int j;
+//     //             j = i + 1;
+//     //             if(i == 0)
+//     //                 j = 0;
+//     //             while(S[j] != '.' && j < S.length()){
+//     //                 ans += S[j];
+//     //                 j++;
+//     //             }
+//     //             if(i !=0)
+//     //                 ans += '.';
+//     //         }
+//     //     }
+//     //     return ans;
+//     // } 
+//       string reverseWords(string S) 
+//     { 
+//         vector<string> v(S.size());
+//         int i=0;
+//         cout << "vector " << v.size() << endl;
+//         for(auto x:S)
+//         {
+//             if(x=='.') i++;
+//             v[i]+=x; cout << "v--"<< i  << v[i] << endl;
+//             if(x=='.') i++;
+//         }
+//         cout <<"one" << endl;
+//         for(auto m : v){
+//             cout << m << " ";
+//         }cout << endl;
+//         string ans;
+//         for(int j=v.size()-1;j>=0;j--) ans+=v[j];
+//         return ans;
+//     }
+// };
+
+//{ Driver Code Starts.
+// int main() 
+// {
+//     int t;
+//     cin >> t;
+//     while (t--) 
+//     {
+//         string s;
+//         cin >> s;
+//         cout << s.size() << endl;
+//         Solution obj;
+//         cout<<obj.reverseWords(s)<<endl;
+//     }
+
+
+// }
+// } Driver Code 
+
+//{ Driver Code Starts
+//Initial template for C++
+
+#include<bits/stdc++.h>
+using namespace std;
+
+// } Driver Code Ends
+//User function template for C++
+
+class Solution{
+  public:
+    
+    string longestCommonPrefix (string strs[], int n)
+    {
+        int i =0,j =0;
+        // int n = strs.length();
+        string ans = "";
+        cout << "while" ;
+        while(i<n-1 && j< strs[0].length()){
+            cout << i << " ";
+            if(strs[i][j] == strs[i+1][j]){
+
+                if(i == n-2){
+                    ans += strs[i][j];
+                    cout << ans << endl;
+                    i =0;
+                    j++;
+                }
+            }else
+                break;
+
+            i++;
+        }
+        return ans;
     }
-    cout << sum%m;
+};
+
+//{ Driver Code Starts.
+int main()
+{
+    int t; cin >> t;
+    while (t--)
+    {
+        int n; cin >> n;
+        string arr[n];
+        for (int i = 0; i < n; ++i)
+            cin >> arr[i];
+        
+        cout << "write" << endl;
+        // for (int i = 0; i < n; i++)
+        //     cout << arr[i] << " ";
+        
+        Solution ob;
+        cout << ob.longestCommonPrefix (arr, n) << endl;
+    }
 }
+
+
+// } Driver Code Ends
+
+
+
