@@ -1,13 +1,8 @@
 {
-    "prettier.tabWidth": 4,
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 16,
     "files.associations": {
         "*.tex": "latex",
-        "iostream": "cpp",
-        "new": "cpp",
-        "vector": "cpp",
-        "ostream": "cpp",
-        "cmath": "cpp"
-    },
-    "files.autoSave": "afterDelay",
-    "editor.fontSize": 16
+        "iostream": "cpp"
+    }
 }

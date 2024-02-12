@@ -2,21 +2,23 @@
 using namespace std;
 
 void array1(){ //memory already allocated 
-    int a[4]= { 3,45,6,5};
+    cout << endl << "array1" << endl;
+    int a[4]= { 1,2,3,4};
     int arr[20] = {0}; //initialize all with zero
+
     array <int,4> b = {1,7,43,4};
 
     cout << a[2] << " " << b[2] <<endl;
 
     // just break the code in lines
     cout << b.at(2) << " " << b.front() << " "
-    << b.back() << " size is " << b.size();
+    << b.back() << "& size is " << b.size();
 }
 
-void vector1() //memory allocated at run time
-{
+void vector1(){ //memory allocated at run time
+    cout << endl << "vectors" << endl;
     vector<int> v;
-    cout << v.size() << endl;
+    cout << "size "<< v.size() << endl;
     v.push_back(4);
     
     cout << v.at(0) << endl;
@@ -24,7 +26,7 @@ void vector1() //memory allocated at run time
     v.push_back(8);
     v.push_back(2);
 
-    // v.pop_back();
+    v.pop_back();
     // v.pop_back();
 
     cout << "print ";
@@ -32,7 +34,7 @@ void vector1() //memory allocated at run time
     for(int i=0 ;i<=v.size();i++){
         cout << v[i] << " ";
     }
-    cout << "capacity "<< v.capacity() << endl;
+    cout << endl << "capacity "<< v.capacity() << endl;
     
     //for each loop
     for(int i:v){ // i == v[i] each value
@@ -57,6 +59,7 @@ void vector1() //memory allocated at run time
 }
 
 void deque1(){
+    cout << endl << "deque1" << endl;
     deque <int> d = {1,2,3,8,9};
     d.push_front(4);
     d.push_back(6);
@@ -68,6 +71,7 @@ void deque1(){
 }
 
 void list1(){
+    cout << endl << "list1" << endl;
     list <int > l;
     l.push_back(5);
     l.push_front(8);
@@ -87,6 +91,7 @@ void list1(){
 }
 
 void stack1(){
+    cout << endl << "stack1" << endl;
     stack<int> stack;
     stack.push(21);// all values must be of same data type
     stack.push(22);
@@ -104,14 +109,15 @@ void stack1(){
 }
 
 void queue1(){
+    cout << endl << "queue" << endl;
     queue<int> q;
     q.push(8);
     q.push(7);
     q.push(10);
     q.push(2);
     cout << "first in first out is " << q.front()<< endl;
-    // q.pop();
-    // cout <<endl << q.front();
+    q.pop();
+    cout <<endl << q.front();
     int n = q.size();
     for(int i=0;i<n;i++){
         cout << q.front() <<" ";
@@ -132,13 +138,17 @@ void queue1(){
 
 
 void sets(){
-
+    cout << endl << "sets" << endl;
     //store in sorted and unique way
     // T.C -> logN
-    set<int> st = {2,2,5,1,6,2,10};
+    set<int> st = {2,2,5,1,6,2,5,10};
     st.insert(3);
+    //print
+    for(auto it = st.begin();it !=st.end();it++){
+        cout << *it << " ";
+    }
 
-    //to find element
+    // //to find element
     if(st.find(3) != st.end())
         cout << "It is present" << endl;
 
@@ -148,9 +158,9 @@ void sets(){
     auto it = st.find(2); //it -> iterator
     cout << *(it) << endl;
 
-    cout << st.size() << endl;
+    cout << "size before " << st.size() << endl;
     st.erase(5);
-    cout << st.size() << endl;
+    cout << "size after " << st.size() << endl;
 
     //print
     for(auto it = st.begin();it !=st.end();it++){
@@ -163,7 +173,7 @@ void sets(){
 }
 
 void maps(){
-
+    cout << endl << "maps" << endl;
     //stored in key(in order) and value pairs
     map<int ,int> mp;
     mp[1] = 9;
@@ -193,6 +203,7 @@ void maps(){
 }
 
 void unorderedmaps(){
+    cout << endl << "unorderedmaps" << endl;
     //store in random and key are always unique
     //T.C = O(1)
     unordered_map<int , int> mpp;
@@ -200,6 +211,7 @@ void unorderedmaps(){
 }
 
 void pairs(){
+    cout << endl << "pairs" << endl;
     //part of utility library
     pair<int , int> p = {3,4};
     cout << p.first << " " <<p.second << endl;
@@ -211,7 +223,7 @@ void pairs(){
 }
 
 void iterators(){
-
+    cout << endl << "iterators" << endl;
     vector<int> v = {10, 20, 30, 50, 80};
     cout << v[0] << endl;
 
@@ -221,15 +233,13 @@ void iterators(){
 
     vector<int>::iterator its = v.end();
     its--; //because v.end points to outside the vector
-
+    cout << *(its) << endl;
 
     //printing 
     for(auto it = v.begin() ; it !=v.end() ;it++){
-
         cout << *(it) << " ";
     }
     cout << endl;
-    cout << *(its) << endl;
 
 }
 
@@ -326,12 +336,3 @@ int main(){
 
     // priorityque();
 }
-
-
-
-
-
-
-
-
-
