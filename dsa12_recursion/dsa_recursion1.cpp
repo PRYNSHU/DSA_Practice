@@ -55,8 +55,8 @@ int main(){
     // int ans2 = power(n);
     // cout << ans2 << endl;
 
-    //count(n);
-    cout << "sum is " << endl;
+    // count(n);
+    // cout << "sum is " << endl;
     int ans = sumarr(arr , n);
     cout << ans << endl;
 }
